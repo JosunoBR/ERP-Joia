@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --primary: #10B981;
+    --primary-hover: #059669;
+    --primary-light: #ECFDF5;
+    --primary-dark: #047857;
+    --bg-main: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+  }
+
+  .dark {
+    --primary: #10B981;
+    --primary-hover: #34D399;
+    --primary-light: #064E3B;
+    --primary-dark: #059669;
+    --bg-main: #0B0F17;
+    --card-bg: #131B2A;
+    --card-border: #1E293B;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom smooth transitions & animations */
+.transition-all-custom {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Pulse animation for active badges */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Remover setas de incremento/decremento (spinners) em campos numéricos em todo o sistema */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+  appearance: textfield !important;
+}
+

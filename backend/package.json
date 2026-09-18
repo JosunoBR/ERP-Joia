@@ -1,0 +1,22 @@
+{
+  "name": "joia-erp-backend",
+  "version": "2.0.0",
+  "description": "Backend API e Banco de Dados Multi-Tenant SQLite - Jóia ERP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "sql.js": "^1.12.0",
+    "xlsx": "^0.18.5"
+  }
+}

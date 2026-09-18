@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identidade Visual Rede Mega 12: Emerald Green & Dark Slate -->
+    <color name="emerald_500">#10B981</color>
+    <color name="emerald_600">#059669</color>
+    <color name="emerald_700">#047857</color>
+    <color name="slate_900">#0F172A</color>
+    <color name="slate_800">#1E293B</color>
+    <color name="slate_700">#334155</color>
+    <color name="surface_light">#F8FAFC</color>
+    <color name="white">#FFFFFF</color>
+</resources>

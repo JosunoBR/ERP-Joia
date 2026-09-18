@@ -1,0 +1,21 @@
+{
+  "name": "portal-erp-joia",
+  "version": "2.0.0",
+  "description": "Portal ERP Jóia — Plataforma Multi-Tenant SaaS de Gestão de Compras e Operações",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix web install && npm --prefix portal-backend install",
+    "build": "npm --prefix backend install && npm --prefix web install && npm --prefix web run build",
+    "start": "node runner.js",
+    "dev": "node runner.js"
+  },
+  "keywords": [
+    "erp",
+    "saas",
+    "multitenant",
+    "gestao",
+    "compras",
+    "portal"
+  ],
+  "author": "Jóia ERP",
+  "license": "ISC"
+}

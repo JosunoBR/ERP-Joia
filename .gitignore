@@ -1,0 +1,59 @@
+# Dependências Node
+node_modules/
+**/node_modules/
+
+# Builds e bundles
+dist/
+dist-ssr/
+**/dist/
+*.local
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Bancos de dados e arquivos SQLite
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+backend/data/
+portal-backend/data/
+data/
+
+# Logs do sistema
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Android, Gradle e Binários
+.gradle/
+**/build/
+android_app/build/
+android_app/app/build/
+android_app/.gradle/
+android_app/.idea/
+android_app/local.properties
+local.properties
+*.apk
+*.aab
+
+# Editores, IDEs e arquivos temporários
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.agents/
+.gemini/
+scratch/
+scratch_*.js
+*.tmp
+
+# Arquivos legados não necessários no repositório
+Apresentacao_*.pptx
+PDF/
+WhatsApp*.ogg
+*.xlsx
